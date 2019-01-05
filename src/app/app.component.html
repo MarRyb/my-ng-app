@@ -1,7 +1,9 @@
 <div class="content-box">
 
-  <child-comp [userName]="name" [userAge]="age"></child-comp>
-  <input type="number" [(ngModel)]="age"/>
+  <h2>Количество кликов: {{clicks}}</h2>
+  <child-comp (onChanged)="onChanged($event)"></child-comp>
+  
+
   <div class="page-header">
     <h1> Список покупок </h1>
   </div>
